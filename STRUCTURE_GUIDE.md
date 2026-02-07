@@ -7,23 +7,23 @@ Your test project has been restructured following the Page Object Model (POM) pa
 
 ```
 TestProject1/
-??? Configuration/
-?   ??? ApplicationSettings.cs          # Centralized app paths and timeouts
-??? Core/
-?   ??? DriverFactory.cs                # Creates and configures driver instances
-?   ??? DriverManager.cs                # Manages driver lifecycle (singleton pattern)
-??? Pages/
-?   ??? BasePage.cs                     # Base class with common page operations
-?   ??? CalculatorPage.cs               # Page object for Calculator app
-?   ??? NotepadPage.cs                  # Page object for Notepad app
-??? Utilities/
-?   ??? CommonActions.cs                # Reusable keyboard/mouse actions
-?   ??? TestData.cs                     # Test constants and data
-??? tests/
-?   ??? TestCaseCalculator.cs           # Refactored calculator tests
-??? UnitTest1.cs                        # Refactored Notepad tests
-??? TestProject1.csproj                 # Project file (no changes needed)
-??? TestProject1.sln                    # Solution file
+1. Configuration/
+ -  ApplicationSettings.cs          # Centralized app paths and timeouts
+2. Core/
+-  DriverFactory.cs                # Creates and configures driver instances
+-  DriverManager.cs                # Manages driver lifecycle (singleton pattern)
+3. Pages/
+-  BasePage.cs                     # Base class with common page operations
+-  CalculatorPage.cs               # Page object for Calculator app
+-  NotepadPage.cs                  # Page object for Notepad app
+4. Utilities/
+-  CommonActions.cs                # Reusable keyboard/mouse actions
+-  TestData.cs                     # Test constants and data
+5. tests/
+-  TestCaseCalculator.cs           # Refactored calculator tests
+  UnitTest1.cs                        # Refactored Notepad tests
+  TestProject1.csproj                 # Project file (no changes needed)
+  TestProject1.sln                    # Solution file
 ```
 
 ## Key Improvements
@@ -191,13 +191,13 @@ page.ClickSomeElement();
 
 ## Best Practices Applied
 
-? DRY (Don't Repeat Yourself) - Common code in BasePage
-? SOLID Principles - Single responsibility per class
-? Abstraction - High-level methods hide implementation details
-? Reusability - Shared utilities and common actions
-? Centralized Configuration - Single source of truth
-? Clear Naming - Methods describe what they do
-? Proper Resource Management - Driver cleanup in DriverManager
+1. DRY (Don't Repeat Yourself) - Common code in BasePage
+2. SOLID Principles - Single responsibility per class
+3. Abstraction - High-level methods hide implementation details
+4. Reusability - Shared utilities and common actions
+5. Centralized Configuration - Single source of truth
+6. Clear Naming - Methods describe what they do
+7. Proper Resource Management - Driver cleanup in DriverManager
 
 ## Next Steps
 
